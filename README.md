@@ -6,7 +6,7 @@ jQuery Smooth Scrolling Anchors Plugin
 
 # Usage
 
-Using <a href="#target-id">:
+Using `<a href="#target-id">`:
 
     <a href="#foo">Scroll to foo smoothly.</a>
 
@@ -43,13 +43,16 @@ Using any element:
 
 # Config Attributes
 
-You can add config attributes to the clickable elements.
+You can add config attributes to the clickable elements. (See demo.html)
 
 * data-scroll-duration
 * data-scroll-easing
 * data-scroll-offset
 
+# Todo
 
-
-
+* change the browser fragment
+* scroll when fragment changes
+* scroll on init if fragment exists
+* improve doc
 

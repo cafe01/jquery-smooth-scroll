@@ -34,8 +34,6 @@
                 targetSelector = el.attr('href') || el.data('scroll-to') || '',
                 targetEl;
 
-            console.log('easing:', easing);
-
             if ( targetSelector == '' ) {
                 return console.error('[%s] invalid "href" or "data-scroll-to" attribute (%s). Use href="#foo" or data-scroll-to=".foo" (a css selector).', pluginName, targetSelector);
             }
