@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>jQuery Smooth Scroll Anchors Plugin</title>
+        <style type='text/css'>
+
+            .padding {
+                height: 400px;
+            }
+
+        </style>
+	</head>
+	<body>
+
+        <ul id="menu">
+            <li><a href="#foo">Foo (href="#foo")</a></li>
+            <li><a data-scroll-to=".bar" data-scroll-easing="easeInElastic">Bar (data-scroll-to=".bar" data-scroll-easing="easeInElastic")</a></li>
+            <li><a href="#baz" data-scroll-offset="20">Baz (href="#baz" data-scroll-offset="20")</a></li>
+            <li><a href="#qux" data-scroll-offset="-20" data-scroll-duration="2500">Qux (href="#qux" data-scroll-offset="-20" data-scroll-duration="2500)</a></li>
+        </ul>
+
+        <div class="padding"></div>
+
+
+        <h1 id="foo"><a href="#menu">Foo</a></h1>
+        <div class="padding"></div>
+
+
+        <h1 id="bar" class="bar"><a href="#menu">Bar</a></h1>
+        <div class="padding"></div>
+
+
+        <h1 id="baz"><a href="#menu">Baz</a></h1>
+        <div class="padding"></div>
+
+
+        <h1 id="qux"><a href="#menu">qux</a></h1>
+        <div class="padding"></div>
+        <div class="padding"></div>
+
+
+
+
+
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type='text/javascript' src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+		<script type='text/javascript' src='smooth_scroll.js'></script>
+
+		<script type='text/javascript'>
+			$(function(){
+			    // use a[href^=#] if only href= method used (no data-scroll-to)
+                $('a').smoothScroll();
+			})
+		</script>
+	</body>
+</html>
